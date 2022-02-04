@@ -11,9 +11,9 @@ export default class Galactic {
     if (p === "mercury") {
       result = Math.floor(e/.24); 
     } 
-    // else if (p === "venus") {
-    //   result = Math.floor(e/.62);
-    // } 
+    else if (p === "venus") {
+      result = Math.floor(e/.62);
+    } 
     // else if (p === "mars") {
     //   result = Math.floor(e/1.88);
     // } 
