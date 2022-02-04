@@ -8,7 +8,7 @@ describe ("Galactic calculator", () => {
   });
   test("It should calculate teh users mercury age based their earth age", () => {
     const galactic = new Galactic(27, "Mercury");
-    expect(galactic.calculator()).toBeCloseTo(112);
+    expect(galactic.calculator()).toBeCloseTo(111);
   });
 });
 

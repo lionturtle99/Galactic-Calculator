@@ -5,10 +5,10 @@ export default class Galactic {
   }
 
   calculator() {
-    // let e = (this.earthAge * 365);
-    // let p = this.planet;
-    // if (p.toLowerCase() === "mercury") {
-    //   return  e/88; 
-    // }
+    let e = (this.earthAge * 365);
+    let p = this.planet;
+    if (p.toLowerCase() === "mercury") {
+      return  Math.floor(e/88); 
+    }
   }
 }
