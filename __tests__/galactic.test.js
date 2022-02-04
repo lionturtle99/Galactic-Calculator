@@ -22,4 +22,8 @@ describe ("Galactic calculator", () => {
     const galactic = new Galactic(22, "Jupiter");
     expect(galactic.calculator()).toBeCloseTo(1);
   });
+  test("It should return an error message", () => {
+    const galactic = new Galactic(22, "Jibberish");
+    expect(galactic.calculator()).toEqual("please input one of the listed planets");
+  });
 });

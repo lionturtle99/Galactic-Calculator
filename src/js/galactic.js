@@ -17,8 +17,11 @@ export default class Galactic {
     else if (p === "mars") {
       result = Math.floor(e/1.88);
     } 
-    // else if (p === "jupiter") {
-    //   result = Math.floor(e/11.86);
+    else if (p === "jupiter") {
+      result = Math.floor(e/11.86);
+    } 
+    // else {
+    //   result = "please input one of the listed planets";
     // }
     return result;
   }
