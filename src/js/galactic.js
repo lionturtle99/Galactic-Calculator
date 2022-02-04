@@ -1,10 +1,11 @@
 export default class Galactic {
-  constructor(earthAge, planet) {
+  constructor(earthAge, lifeEx, planet) {
     this.earthAge = earthAge;
+    this.lifeExpectancy = lifeEx;
     this.planet = planet;
   }
 
-  calculator() {
+  calculateAge() {
     const e = this.earthAge;
     const p = (this.planet.toLowerCase());
     let result;
@@ -25,4 +26,8 @@ export default class Galactic {
     }
     return result;
   }
+
+  // lifeExpectancy() {
+
+  // }
 }
