@@ -7,27 +7,33 @@ export default class Galactic {
 
   calculateAge() {
     const e = this.earthAge;
+    const l =this.lifeExpectancy;
     const p = (this.planet.toLowerCase());
-    let result;
+    let age;
+    let life;
     if (p === "mercury") {
-      result = Math.floor(e/.24); 
+      age = Math.floor(e/.24);
+      life = Math.floor(l/.24);
     } 
     else if (p === "venus") {
-      result = Math.floor(e/.62);
+      age = Math.floor(e/.62);
+      life = Math.floor(l/.62);
     } 
     else if (p === "mars") {
-      result = Math.floor(e/1.88);
+      age = Math.floor(e/1.88);
+      life = Math.floor(l/1.88);
     } 
     else if (p === "jupiter") {
-      result = Math.floor(e/11.86);
+      age = Math.floor(e/11.86);
+      life = Math.floor(l/11.86);
     } 
     else {
-      result = "please input one of the listed planets";
+      return "please input one of the listed planets";
     }
-    return result;
+    return [age, life];
   }
 
-  // lifeExpectancy() {
+  // calculateLifeExp() {
 
   // }
 }
