@@ -8,11 +8,10 @@ describe ("Galactic calculator", () => {
   });
   test("It should calculate teh users mercury age based their earth age", () => {
     const galactic = new Galactic(27, "Mercury");
-    expect(galactic.calculator()).toBeCloseTo(111);
+    expect(galactic.calculator()).toBeCloseTo(112);
+  });
+  test("It should calculate teh users mercury age based their earth age", () => {
+    const galactic = new Galactic(22, "Venus");
+    expect(galactic.calculator()).toBeCloseTo(35);
   });
 });
-
-// expect(galactic.mercuryAge).toBeCloseTo();
-// expect(galactic.venusAge).toBeCloseTo();
-// expect(galactic.marsAge).toBeCloseTo();
-// expect(galactic.jupiterAge).toBeCloseTo();
