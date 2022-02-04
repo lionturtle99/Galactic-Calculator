@@ -5,7 +5,7 @@ export default class Galactic {
     this.planet = planet;
   }
 
-  calculateAge() {
+  calculator() {
     const e = this.earthAge;
     const l =this.lifeExpectancy;
     const p = (this.planet.toLowerCase());
@@ -14,26 +14,29 @@ export default class Galactic {
     if (p === "mercury") {
       age = Math.floor(e/.24);
       life = Math.floor(l/.24);
-    } 
-    else if (p === "venus") {
+    } else if (p === "venus") {
       age = Math.floor(e/.62);
       life = Math.floor(l/.62);
-    } 
-    else if (p === "mars") {
+    } else if (p === "mars") {
       age = Math.floor(e/1.88);
       life = Math.floor(l/1.88);
-    } 
-    else if (p === "jupiter") {
+    } else if (p === "jupiter") {
       age = Math.floor(e/11.86);
       life = Math.floor(l/11.86);
-    } 
-    else {
+    } else {
       return "please input one of the listed planets";
     }
-    return [age, life];
+
+    let firstToUp = p.charAt(0).toUpperCase();
+    let sliced = p.slice(1, p.length);
+    let corrected = firstToUp + sliced;
+    let number = Math.abs(life-age); 
+  
+    if (life - age <= 0) {
+      return ("You are "+number+" years past your life expectancy on "+corrected);
+    } 
+    else {
+      return ("You have "+number+" years left to live on "+corrected);
+    }
   }
-
-  // calculateLifeExp() {
-
-  // }
 }
