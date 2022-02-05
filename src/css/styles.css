@@ -29,17 +29,21 @@ img {
 .btn {
   color:rgb(255, 255, 255);
   background-color: rgb(255, 208, 1);
-  width: 50%;
+  width: 51%;
   margin: auto;
+  display: block;
 }
 .row1 {
   margin-bottom: 2em;
 }
 .result {
   padding: 2em;
+  display: block;
   margin: auto;
-  max-width: 50%;
+  width: 50%;
   min-height: 3em;
-  color:rgb(255, 255, 255);
-  border:rgb(255, 208, 1) solid 1px;
+  color: #ffff;
+}
+label {
+  display: block;
 }
