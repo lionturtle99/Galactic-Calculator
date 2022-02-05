@@ -2,6 +2,7 @@ body {
   text-align: center;
   background-color: rgb(0, 0, 0);
   color: rgb(255, 208, 1);
+  font-family: monospace;
 }
 .jumbotron {
   padding: 5em;
@@ -11,7 +12,7 @@ img {
   max-height: 100%;
 }
 .col-md-4, .col-md-6 {
-  border: solid rgb(255, 208, 1) 5px;
+  /* border: solid rgb(255, 208, 1) 5px; */
   min-height: 10em;
   padding: 3em;
 }
@@ -22,5 +23,23 @@ img {
 
 }
 .integers {
-  background-color: white;
+  position: inherit;
+  color: white;
+}
+.btn {
+  color:rgb(255, 255, 255);
+  background-color: rgb(255, 208, 1);
+  width: 50%;
+  margin: auto;
+}
+.row1 {
+  margin-bottom: 2em;
+}
+.result {
+  padding: 2em;
+  margin: auto;
+  max-width: 50%;
+  min-height: 3em;
+  color:rgb(255, 255, 255);
+  border:rgb(255, 208, 1) solid 1px;
 }

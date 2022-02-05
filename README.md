@@ -7,7 +7,10 @@
 ## Technologies Used
 
 * _Javascript_
+* _jquery_
+* _bootstrap_
 * _npm_
+* _node_
 * _webpack_
 * _jest_
 * _lint_

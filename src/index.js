@@ -6,7 +6,9 @@ import Galactic from "./js/galactic.js";
 
 
 let planetsOutput = (age, exp) => {
-  console.lof(age);
+  console.log(age);
+  $("#earth-age").html(age);
+  $("#earth-exp").html(exp);
   $("#mercury-age").html(Math.floor(age/.24));
   $("#mercury-exp").html(Math.floor(exp/.24));
   $("#venus-age").html(Math.floor(age/.62));
@@ -23,7 +25,8 @@ $(document).ready(function() {
     let lifeExpectancy = $("#life-expect").val();
     let planet = $("#planet").val();
     let galactic = new Galactic(age, lifeExpectancy, planet);
-    planetsOutput(age, lifeExpectancy);
     $("#result").html(galactic.calculator());
+    planetsOutput(age, lifeExpectancy);
+    
   });
 });
