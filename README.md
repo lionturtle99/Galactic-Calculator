@@ -1,14 +1,12 @@
-# _title_
+# _Super Galactic Age Calculator_
 
 #### By _**Liam Eller**_
 
-#### _brief description_
+#### _Demonstration of environments and TDD_
 
 ## Technologies Used
 
 * _Javascript_
-* _html5_
-* _css_
 * _npm_
 * _webpack_
 * _jest_
@@ -19,7 +17,7 @@
 
 ## Description
 
-_more detailed description._
+_Takes a users name, age & Life expectancy and returns the ~ age and life expectancy on planets in our solar system._
 
 ## Setup/Installation Requirements
 
@@ -39,4 +37,4 @@ _None_
 
 _[MIT](https://opensource.org/licenses/MIT)_
 
-Copyright (c) _date:_ _by: Liam Eller_
+Copyright (c) _Date: 1/4/22_ _By: Liam Eller_

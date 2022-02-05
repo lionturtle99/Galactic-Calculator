@@ -26,17 +26,14 @@ export default class Galactic {
     } else {
       return "please input one of the listed planets";
     }
-
     let firstToUp = p.charAt(0).toUpperCase();
     let sliced = p.slice(1, p.length);
-    let corrected = firstToUp + sliced;
+    let planet = firstToUp + sliced;
     let number = Math.abs(life-age); 
-  
     if (life - age <= 0) {
-      return ("You are "+number+" years past your life expectancy on "+corrected);
-    } 
-    else {
-      return ("You have "+number+" years left to live on "+corrected);
+      return ("You are about "+number+" years past your life expectancy on "+planet);
+    } else {
+      return ("You have about "+number+" years left to live on "+planet);
     }
   }
 }
